@@ -6,6 +6,7 @@ const { Op } = require("sequelize");
 const treasure = db.Treasure;
 const money_value = db.MoneyValue;
 
+
 const bodyValidate = (req, res)=> {
 
     const result = validationResult(req);
@@ -192,6 +193,12 @@ const deg2rad = (deg) => {
     return deg * (Math.PI/180)
 }
 
+const award_points = async(treasure) => {
 
+    const res = treasure.map( async (item) => {
+        
+        await user
+    })
+}
 
 
